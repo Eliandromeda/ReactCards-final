@@ -1,0 +1,14 @@
+.opinion-card__name {
+  display: flex;
+  align-items: center;
+}
+
+.opinion-card__name
+.icon-button img {
+  padding: 7px;
+  width: auto;
+}
+
+.opinion-card__name h3 {
+  margin: 0;
+}
