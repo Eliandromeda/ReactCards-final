@@ -1,21 +1,19 @@
-import ThumbButton from "./ThumbButton";
+import IconButton from "./IconButton";
+import thumbUp from '../../src/assets/img/thumbs-up.svg';
+import thumbDown from '../../src/assets/img/thumbs-down.svg';
 
 const VoteSection = () => {
-  const iconsRoute = {
-    thumbUp: '/assets/img/thumbs-up.svg',
-    thumbDown: '/assets/img/thumbs-down.svg '
-  }
   return (
     <div className="opinion-card__votes">
-      <ThumbButton
-        src={iconsRoute.thumbUp}
-        typeThumb="icon-button__vote-up"
+      <IconButton
+        src={thumbUp}
+        classButton="icon-button__vote-up"
         ariaButton="thumbs up"
         altImg="thumbs up"
       />
-      <ThumbButton
-        src={iconsRoute.thumbDown}
-        typeThumb="icon-button__vote-down"
+      <IconButton
+        src={thumbDown}
+        classButton="icon-button__vote-down"
         ariaButton="thumbs down"
         altImg="thumbs down"
       />

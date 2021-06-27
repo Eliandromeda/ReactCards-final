@@ -1,17 +1,14 @@
 
-import thumbsUp from '../assets/img/thumbs-up.svg';
-import thumbsDown from '../assets/img/thumbs-down.svg';
-
-const Gauge = () => {
+const Gauge = (props) => {
   return(
-  <div className="opinion-card__gauge">
-    <div className="opinion-card__gauge__thumbs-up">
-      <img src={thumbsUp} alt="thumps up" />
-      <label className="opinion-card__gauge__percentage">70%</label>
+  <div className="gauge">
+    <div className={props.firstBar}>
+      <img src={props.firstIcon} alt={props.firstAlt} />
+      <label className={props.firstPercentage}>70%</label>
     </div>
-    <div className="opinion-card__gauge__thumbs-down">
-      <label className="opinion-card__gauge__percentage">30%</label>
-      <img src={thumbsDown} alt="thumps down"/>
+    <div className={props.secondBar}>
+      <label className={props.secondPercentage}>30%</label>
+      <img src={props.secondIcon} alt={props.secondAlt} />
     </div>
   </div>
   );

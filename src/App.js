@@ -1,5 +1,5 @@
 import './Card/Content.css';
-import CardsItem from './Card/CardsItem'
+import OpinionCard from './Card/OpinionCard'
 import cards from './data/data.json'
 
 function App() {
@@ -7,12 +7,12 @@ function App() {
 
   return (
    <div className="opinion-card">
-      <CardsItem card={cardsData[0]} />
-      <CardsItem card={cardsData[1]} />
-      <CardsItem card={cardsData[2]} />
-      <CardsItem card={cardsData[3]} />
-      <CardsItem card={cardsData[4]} />
-      <CardsItem card={cardsData[5]} />
+      <OpinionCard card={cardsData[0]} />
+      <OpinionCard card={cardsData[1]} />
+      <OpinionCard card={cardsData[2]} />
+      <OpinionCard card={cardsData[3]} />
+      <OpinionCard card={cardsData[4]} />
+      <OpinionCard card={cardsData[5]} />
    </div>
   );
 }

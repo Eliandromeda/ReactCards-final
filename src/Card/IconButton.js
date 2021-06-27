@@ -2,7 +2,7 @@ import "../Card/IconButton.css";
 
 const ThumbsButton = (props) => {
   const CLASSES = {
-    iconButton: `icon-button ${props.typeThumb}`,
+    iconButton: `icon-button ${props.classButton}`,
   };
 
   return (
